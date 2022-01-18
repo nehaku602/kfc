@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A LA Carte</title>
+    <style>
+        #container4{
+            width: 55%;
+            margin-left: 600px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap:20px;
+            /* border: 1px solid red;
+             */
+             font-family: Arial, Helvetica, sans-serif;
+             font-size: 13px;
+        }
+        img{
+            background-color: rgb(248,247,245)
+        }
+        h1{
+            margin-left: 600px;
+            margin-bottom: 40px;
+        }
+        #flex4
+        {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+        }
+        button{
+            border-radius: 20px;
+            color: white;
+            border:none;
+            background-color: rgb(228,0,43)
+        }
+        button:hover{
+            background-color: rgb(204, 6, 42)
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>A LA CARTE</h1>
+    <div id="container4">
+    </div>
+</body>
+</html>
+<script>
+        var A_LA_CARTE=[
+
+{image_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-AlcBreast?q=75",
+    name:"A La Carte Breast",
+    calories:  "210-530",
+    location:"Set location for pricing."
+},
+{image_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-AlcLeg?q=75",
+    name:"A La Carte Drum",
+    calories:  "80-170",
+    location:"Set location for pricing."
+},
+{image_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-AlcThigh?q=75",
+    name:"A La Carte Thing",
+    calories:  "150-330",
+    location:"Set location for pricing."
+},
+{image_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-AlcWing?q=75&w=1280",
+    name:"A La Carte Wing",
+    calories:"70-170",
+    location:"Set location for pricing."
+},
+{image_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-AlcTender2?q=75&w=1280",
+    name:" A La Carte Tender",
+    calories: "390-530",
+    location:"Set location for pricing."
+},
+{image_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-FamousBowl?q=75&w=1280",
+    name:"Famous Bowl",
+    calories: "840-1120",
+    location:"Set location for pricing."
+},
+{image_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-PotPie?q=75&w=1280",
+    name:" Pot Pie",
+    calories:  "720",
+    location:"Set location for pricing."
+}
+]
+localStorage.setItem("alacarte",JSON.stringify( A_LA_CARTE));
+
+var array= JSON.parse(localStorage.getItem("alacarte"))||[];
+createTable(array);
+function createTable(array)
+{
+    array.map(function(elem){
+        var box= document.createElement("div");
+        box.setAttribute("id", "box");
+      
+       
+        // box.style.border= "1px solid green";
+
+        var image= document.createElement("img");
+        image.setAttribute("src", elem.image_url);
+        image.style.height="75%";
+        image.style.width="100%";
+
+        var name= document.createElement("p");
+        name.textContent=elem.name;
+        name.style.marginBottom="-10px";
+
+        var calories= document.createElement("p");
+        calories.textContent=elem.calories;
+        calories.style.marginBottom="-10px";
+
+        var div2=document.createElement("div");
+        div2.setAttribute("id", "flex")
+
+        var loc= document.createElement("p");
+        loc.textContent=elem.location;
+
+        var btn= document.createElement("button");
+        btn.innerHTML="Add to cart";
+
+        div2.append(loc, btn)
+
+        box.append(image, name, calories, div2)
+        document.querySelector("#container4").append(box);
+        console.log(array)
+    })
+}
+</script>
