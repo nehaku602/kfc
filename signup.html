@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+    <style>
+        #container1 {
+            width: 85%;
+            height: 700px;
+            display: flex;
+            /* background-color: black; */
+
+        }
+
+        #box1 {
+            width: 55%;
+            height: 90%;
+            /* background-color: blanchedalmond; */
+            margin: 5.5% 1.5% 1.5% 0
+        }
+
+        #box2 {
+            width: 45%;
+            height: 90%;
+            /* background-color: blanchedalmond; */
+            margin: 5.5% 1.5% 1.5% 2.5%
+        }
+
+        img {
+            width: 100%
+        }
+
+        #box2_1 {
+            width: 70%;
+            height: 80%;
+            /* background-color: blue; */
+            margin: 1%;
+
+        }
+
+        #box2_1>div:nth-child(1) {
+            font-size: 2.5rem;
+            line-height: 3.3rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            width: 70%;
+            margin-top: 30px;
+            height: 25px;
+            border: none;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        button {
+            width: 82%;
+            height: 50px;
+            border-radius: 25px;
+            background-color: rgb(219, 219, 219);
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: medium;
+            border: none;
+        }
+
+        #forget {
+            font-size: x-small;
+            width: 10%;
+            height: 10%;
+            border: none
+        }
+
+        /* #box2_1>p:nth-child(1) {
+            font-size: 1px
+        }
+
+        #box2_1>p:nth-child(2) {
+            font-size: 20px
+        } */
+
+        a {
+            color: black;
+        }
+
+        /* form>lable>input{
+            width: 80%;
+        } */
+        /* #checkbox1{
+            font-size: 10px;
+        } */
+        lable>input {
+            margin: 2px
+        }
+        td>p{
+            margin: 0 0 10px;
+        }
+        td>input{
+            height: fit-content;
+            width: fit-content;
+            margin: 0 5px;
+            
+        }
+        td{
+            padding: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="container1">
+        <div id="box1">
+            <img src="Screenshot 2022-01-17 201023.jpg" alt="">
+        </div>
+        <div id="box2">
+            <div id="box2_1">
+                <div>CREATE AN ACCOUNT</div>
+                <form action="">
+                    <input type="text" placeholder="First Name*">
+                    <hr>
+                    <input type="text" placeholder="Last Name*">
+                    <hr>
+                    <input type="email" placeholder="Email*">
+                    <hr>
+                    <input type="password" placeholder="Password*">
+                    <hr>
+                    <input type="password" placeholder="Confirm Password*">
+                    <hr>
+
+
+
+                </form>
+                <br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td> <p> By selecting the box, you agree to our
+                                <a href="/privacy-policy">Privacy Policy</a>
+                                and
+                                <a href="/terms-of-use">Terms of Use</a>
+                            </p></td>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td> <p>Sign up for Email Updates and Promotions.
+
+                                </p></td>
+                            </tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    
+
+                <button>Create Account</button>
+                <p style="text-align: center;">Already a member
+                    <a href="">Sign In?</a>
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
