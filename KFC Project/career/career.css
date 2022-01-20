@@ -26,7 +26,8 @@
              width: 100%;
              height: 400px;
              background-image: url("https://images.ctfassets.net/9tka4b3550oc/5tRiGfQXCdlrlRXDVPWdYT/79fca81cf69dad4129d7f6c0e9c873f9/hero-careers.jpg?w=1900");
-             color: white;
+             color: rgb(0, 0, 0);
+             opacity: 85%;
              text-align: center;
             }
     #text2 {
@@ -300,9 +301,9 @@
                 background-color: #f8f7f5;
                 width: 22%;
                 height: 500px;
-                margin-left: 1150px;
+                margin-left: 1000px;
                 margin-top: 250px;
-                padding-left: 50px;
+                padding: 0 50px;
       } 
   #learn{
         width: 40%;
@@ -348,11 +349,13 @@
             height: 380px;
             background: url("https://images.ctfassets.net/9tka4b3550oc/4Ib0hIQA7tdYuV3oBHHzqY/e1ad0a11c544279e1895f42eb72df68f/routing-careers-culture.jpg?w=640");
             position: relative;
+            
         } 
   #box2_12_2_1> div {
-                position: absolute;
+                /* position: absolute; */
                 bottom: 150px;
                 left: 220px;
+               
 }
         
 
@@ -360,7 +363,8 @@
              /* border: 1px solid rgb(58, 18, 167); */
              width: 50%;
              height: 380px;
-             background: url("https://images.ctfassets.net/9tka4b3550oc/50tkcHRFTh0VgPIlhPRpIF/d28c820fc7f7bbbd26ae6ad1ad832cbe/routing-careers-growth.jpg?w=640");
+             background: url("https://images.ctfassets.net/9tka4b3550oc/50tkcHRFTh0VgPIlhPRpIF/d28c820fc7f7bbbd26ae6ad1ad832cbe/routing-careers-growth.jpg?w=640")no-repeat;
+             background-size: cover;
              position: relative;
         } 
   #box2_12_2_2> div {
@@ -368,7 +372,10 @@
                 bottom: 150px;
                 left: 75px;
   }
-
+  #box2_12_2_1> div >h2{
+          margin: 40% 30%;
+  }
+ 
  
 
 
