@@ -51,11 +51,11 @@ nav {
 .box1_5>a:hover{
    text-decoration: underline;
 }
-.box2_5>button:hover{
-    background-color: #d40d31;
+.box2_5>#btn_property>button:hover{
+    background-color: #e21339;
 }
 
-.btn-class {
+#btn-class {
     padding: 12px 42px;
     border-radius: 25px;
     border: 0px;
@@ -71,6 +71,13 @@ nav {
     margin: 5px 0px;
     width: 55px;
     cursor: pointer;
+    color: black;
+}
+.box2_5>#account_id{
+    color: black;
+}
+.box2_5>#cart_id{
+    color: black;
 }
 
 .icon-border {
@@ -97,9 +104,9 @@ nav {
     font-size: 14px;
 }
 
-.nav-bottom>.location {
+.nav-bottom>.location{
     width: 20px;
-    margin-top: 9px;
+    margin-top: 12px;
     color: #E4002B;
 }
 
@@ -110,4 +117,49 @@ nav {
 }
 .nav-top>img{
     margin-left: 1.65%;
+}
+ #mobile_nav{ 
+     display: none; 
+ } 
+ .nav-bottom>a{
+     display: none;
+ }
+ /* ----------------------------------------media query------------------------------------------------------ */
+@media only screen and (min-width:0px) and (max-width:985px) {
+    nav{
+        display: none;
+    }
+    .nav-top{
+        display: none;
+    }
+    #mobile_nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 44px;
+    }
+    #mobile_nav>a{
+       color: black;
+       margin-left: 5%;
+       margin-right: 5%;
+    }
+    .nav-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-bottom>.para{
+        margin-top: 1px;
+    }
+    .nav-bottom>.location{
+       margin-left: 5%;
+       margin-top: 0px;
+      
+    }
+    .nav-bottom>a{
+      display: block;
+      margin-right: 5%;
+      color:white;
+    }
+   
 }
