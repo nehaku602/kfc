@@ -10,7 +10,7 @@
         padding: 14px  0 0 0;   
         font-family:cursive;
         font-size: 20px;
-        text-align: center;
+        /* text-align: center; */
     }
     #box2_1_1{
         /* background-color: springgreen; */
@@ -18,7 +18,7 @@
         margin-left: 45%;
         display: flex;
         justify-content:space-between;
-        color: white;
+        color: rgb(245, 245, 245);
     }
 
     .box2_2{
