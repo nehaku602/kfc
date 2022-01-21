@@ -1,0 +1,86 @@
+    #container2{
+        border: springgreen;
+        width: 100%;       
+    } 
+
+    .box2_1{
+        background-color: #e4002b;
+        width: 100%;
+        height: 50px;  
+        padding: 14px  0 0 0;   
+        font-family:cursive;
+        font-size: 20px;
+        text-align: center;
+    }
+    #box2_1_1{
+        /* background-color: springgreen; */
+        width: 54%;
+        margin-left: 45%;
+        display: flex;
+        justify-content:space-between;
+        color: white;
+    }
+
+    .box2_2{
+        /* border: 1px solid rgb(0, 255, 64); */
+        width: 100%;
+        height: 901px; 
+        display: flex;
+    }
+        #box2_2_1{
+        /* border: 0.11px solid rgb(157, 157, 161); */
+        width: 100%;
+        height: 901px;
+        text-align: center;
+        position: sticky;
+        -webkit-position: sticky;
+        top: 0;
+        
+    }
+        #box2_2_2{
+        border: 0.1px solid rgb(182, 183, 189);
+        width: 100%;
+        height: 901px;
+    }
+
+    #find{
+          font-size: 30px;
+          font-weight: bolder;
+    
+     }
+    #search{
+             font-weight: bold;
+    }
+
+    #louis{
+           /* border: 1px solid red; */
+           width: 100%;
+
+        }
+    .l{
+        /* background-color: aqua; */
+        border-bottom: 2px solid red;
+        color: #7575a1;
+        font-size: 22px;
+        font-weight: bolder;
+        display: flex;
+        width: 48%;
+        height: 45px;
+        margin-left: 24%;
+        justify-content: space-between;
+    }
+    .l > div {
+               justify-content: space-between;
+    }
+    
+    #use{
+         color: red;
+         font-weight: bold;
+         font-size: 20px;
+    }
+
+    #location{
+          
+             font-size: 22px;
+   }
+ 
