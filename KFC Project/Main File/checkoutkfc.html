@@ -453,11 +453,16 @@
         var cvv = document.querySelector("#cvv").value;
         // console.log(nameoncard,card,cvv,exp)
         localStorage.setItem("finalpayable", estimated);
-        if (nameoncard == "Huzaifa Banegar" && card == 123456789 && cvv == 123 && exp == "12/24") {
+        if ((nameoncard == "huzaifa"||nameoncard == "shashank"||nameoncard =="satish" ||nameoncard =="neha" ||nameoncard =="mayuri" ||nameoncard ==  "mohit")&& card == 123456789 && cvv == 123 && exp == "12/24") {
             console.log("success")
             window.location.href = "otp.html";
             alert(`Total payable is ${val.toFixed(2)}`)
         }
+        // else   if (nameoncard == "Shashank Shalabh" && card == 123456789 && cvv == 123 && exp == "12/24") {
+        //     console.log("success")
+        //     window.location.href = "otp.html";
+        //     alert(`Total payable is ${val.toFixed(2)}`)
+        // }
         else {
             alert("Invalid Details")
         }
