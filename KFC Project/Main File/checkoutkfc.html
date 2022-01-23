@@ -431,15 +431,15 @@
     var subtotal = cartarray.reduce(function (ac, el) {
         return ac + Number(el.price);
     }, 0);
-    document.querySelector(".subtotal").textContent = `$ ${subtotal}`
+    document.querySelector(".subtotal").textContent = `$ ${subtotal.toFixed(2)}`
 
     var tax = subtotal * (0.12);
-    document.querySelector(".tax").textContent = `$ ${tax}`
+    document.querySelector(".tax").textContent = `$ ${tax.toFixed(2)}`
 
     var estimated = tax + subtotal
-    document.querySelector(".estimated").textContent = `$ ${estimated}`
+    document.querySelector(".estimated").textContent = `$ ${estimated.toFixed(2)}`
 
-    document.querySelector(".paybutton").value = `Pay $${estimated}`
+    document.querySelector(".paybutton").value = `Pay $${estimated.toFixed(2)}`
     // localStorage.setItem("KFCtotalprice", estimated);
 
     //----------------------------------------------------------------------------------------------------------------------------
@@ -456,7 +456,7 @@
         if (nameoncard == "Huzaifa Banegar" && card == 123456789 && cvv == 123 && exp == "12/24") {
             console.log("success")
             window.location.href = "otp.html";
-            alert(`Total payable is ${val}`)
+            alert(`Total payable is ${val.toFixed(2)}`)
         }
         else {
             alert("Invalid Details")
