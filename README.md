@@ -1,3 +1,5 @@
+![1_KhA5_iWUN02BY33xEluVxQ](https://user-images.githubusercontent.com/97446677/173053702-38600367-9d20-4473-b38c-16277e094a04.jpg)
+
 KFC, a subsidiary of Yum! Brands, Inc. (NYSE: YUM.), is a global chicken restaurant brand with a rich, decades-long history of success and innovation. With real cooks breading and freshly preparing delicious chicken by hand in more than 25,000 restaurants in over 145 countries and territories around the world. This website provides the users to select the chicken fried item of various mouth watering dishes.
 
 Here are some snippet of our cloned website
